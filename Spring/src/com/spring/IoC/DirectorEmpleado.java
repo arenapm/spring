@@ -6,6 +6,18 @@ public class DirectorEmpleado implements Empleados {
 	private String email;
 	private String nombreEmpresa;
 	
+	// Método Init
+	
+	public void metodoInicial() {
+		System.out.println("Método Init - Tareas a ejecutar antes de que el bean esté listo");
+	}
+	
+	// Método Destroy
+	
+	public void metodoFinal() {
+		System.out.println("Método Destroy - Tareas a ejecutar después de utilizar el bean");
+	}
+	
 	public String getEmail() {
 		return email;
 	}
